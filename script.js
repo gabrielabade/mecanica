@@ -72,15 +72,8 @@ if (contactForm) {
   contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    // Here you would typically send the form data to a server
-    // For demonstration, we'll just show a success message
-    const formData = new FormData(contactForm);
-    const formValues = Object.fromEntries(formData.entries());
-
-    console.log('Form submitted with values:', formValues);
-
-    // Show success message (in a real implementation)
-    alert('Sua solicitação foi enviada com sucesso! Entraremos em contato em breve.');
+    // Apenas mostrar uma mensagem de sucesso sem enviar para backend
+    alert('Sua solicitação foi registrada com sucesso! Entraremos em contato em breve.');
 
     // Reset form
     contactForm.reset();

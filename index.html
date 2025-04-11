@@ -11,7 +11,7 @@
 
 <body>
   <!-- Header -->
-  <header id="inicio">
+  <header>
     <div class="top-bar">
       <div class="contact-info">
         <div><i class="fas fa-phone"></i> (11) 4567-8901</div>
@@ -31,17 +31,18 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#inicio" class="active">Início</a></li>
+          <li><a href="#hero" class="active">Início</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#sobre-nos">Sobre Nós</a></li>
           <li><a href="#diferenciais">Diferenciais</a></li>
           <li><a href="#galeria">Galeria</a></li>
           <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#blog">Blog</a></li>
+          <li><a href="#blog">Dicas</a></li>
           <li><a href="#contato">Contato</a></li>
+          <li class="mobile-only"><a href="#agendar" class="mobile-cta">Agendar Serviço</a></li>
         </ul>
       </nav>
-      <a href="#agendar" class="menu-btn">Agendar Serviço</a>
+      <a href="#agendar" class="menu-btn hide-on-mobile">Agendar Serviço</a>
       <div class="mobile-menu">
         <i class="fas fa-bars"></i>
       </div>
@@ -49,7 +50,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section id="hero" class="hero">
     <div class="hero-content">
       <h1>A Melhor Oficina Mecânica da Região</h1>
       <p>Oferecemos serviços de mecânica automotiva com tecnologia avançada, equipe especializada e atendimento
@@ -129,7 +130,7 @@
   <!-- About Us Section -->
   <section id="sobre-nos" class="about">
     <div class="about-image">
-      <img src="/api/placeholder/600/400" alt="Equipe AutoTech Express">
+      <img src="images/sobre-nos-equipe.jpg" alt="Equipe AutoTech Express">
     </div>
     <div class="about-content">
       <h2>Sobre a AutoTech Express</h2>
@@ -229,37 +230,37 @@
       excelência.</p>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="/api/placeholder/400/300" alt="Oficina AutoTech Express">
+        <img src="images/galeria-recepcao.jpg" alt="Recepção da Oficina AutoTech Express">
         <div class="gallery-overlay">
           <div class="gallery-title">Recepção</div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="/api/placeholder/400/300" alt="Equipamentos de Diagnóstico">
+        <img src="images/galeria-diagnostico.jpg" alt="Equipamentos de Diagnóstico Eletrônico">
         <div class="gallery-overlay">
           <div class="gallery-title">Área de Diagnóstico</div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="/api/placeholder/400/300" alt="Elevadores">
+        <img src="images/galeria-elevadores.jpg" alt="Elevadores Hidráulicos para Veículos">
         <div class="gallery-overlay">
           <div class="gallery-title">Elevadores</div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="/api/placeholder/400/300" alt="Área de Serviço">
+        <img src="images/galeria-servico.jpg" alt="Área de Serviço da Oficina">
         <div class="gallery-overlay">
           <div class="gallery-title">Área de Serviço</div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="/api/placeholder/400/300" alt="Sala de Espera">
+        <img src="images/galeria-espera.jpg" alt="Sala de Espera Confortável">
         <div class="gallery-overlay">
           <div class="gallery-title">Sala de Espera</div>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="/api/placeholder/400/300" alt="Estoque de Peças">
+        <img src="images/galeria-pecas.jpg" alt="Estoque Organizado de Peças">
         <div class="gallery-overlay">
           <div class="gallery-title">Estoque de Peças</div>
         </div>
@@ -280,7 +281,7 @@
         </div>
         <div class="client-info">
           <div class="client-image">
-            <img src="/api/placeholder/60/60" alt="Cliente">
+            <img src="images/cliente-roberto.jpg" alt="Cliente Roberto Almeida">
           </div>
           <div class="client-details">
             <h4>Roberto Almeida</h4>
@@ -296,7 +297,7 @@
         </div>
         <div class="client-info">
           <div class="client-image">
-            <img src="/api/placeholder/60/60" alt="Cliente">
+            <img src="images/cliente-carla.jpg" alt="Cliente Carla Mendes">
           </div>
           <div class="client-details">
             <h4>Carla Mendes</h4>
@@ -312,7 +313,7 @@
         </div>
         <div class="client-info">
           <div class="client-image">
-            <img src="/api/placeholder/60/60" alt="Cliente">
+            <img src="images/cliente-pedro.jpg" alt="Cliente Pedro Santos">
           </div>
           <div class="client-details">
             <h4>Pedro Santos</h4>
@@ -323,55 +324,53 @@
     </div>
   </section>
 
-  <!-- Blog Section -->
+  <!-- Blog Section (transformado em Dicas) -->
   <section id="blog" class="blog">
-    <h2 class="section-title">Blog AutoTech</h2>
+    <h2 class="section-title">Dicas AutoTech</h2>
     <p class="section-subtitle">Confira nossas dicas e informações úteis sobre manutenção e cuidados com seu veículo</p>
 
     <div class="blog-grid">
       <div class="blog-card">
         <div class="blog-image">
-          <img src="/api/placeholder/350/200" alt="Dicas de Manutenção">
+          <img src="images/dica-manutencao.jpg" alt="Dicas de Manutenção Preventiva">
         </div>
         <div class="blog-content">
           <div class="blog-date"><i class="far fa-calendar-alt"></i> 28 Mar, 2025</div>
           <h3 class="blog-title">5 Dicas Essenciais para Manutenção Preventiva</h3>
-          <p class="blog-excerpt">Saiba como evitar problemas mecânicos e prolongar a vida útil do seu veículo com essas
-            dicas práticas...</p>
-          <a href="#" class="blog-link">Ler mais <i class="fas fa-arrow-right"></i></a>
+          <p class="blog-excerpt">A manutenção preventiva é fundamental para prolongar a vida útil do seu veículo.
+            Verifique regularmente os níveis de óleo, pressão dos pneus, sistema de freios, filtros e bateria. Além
+            disso, siga o manual do proprietário e não ignore sinais de alerta no painel.</p>
         </div>
       </div>
 
       <div class="blog-card">
         <div class="blog-image">
-          <img src="/api/placeholder/350/200" alt="Consumo de Combustível">
+          <img src="images/dica-combustivel.jpg" alt="Economia de Combustível">
         </div>
         <div class="blog-content">
           <div class="blog-date"><i class="far fa-calendar-alt"></i> 15 Mar, 2025</div>
           <h3 class="blog-title">Como Reduzir o Consumo de Combustível</h3>
-          <p class="blog-excerpt">Conheça estratégias eficientes para economizar combustível e reduzir os gastos mensais
-            com seu veículo...</p>
-          <a href="#" class="blog-link">Ler mais <i class="fas fa-arrow-right"></i></a>
+          <p class="blog-excerpt">Para economizar combustível, mantenha uma velocidade constante, evite acelerações
+            bruscas, verifique a pressão dos pneus mensalmente, faça a manutenção regular do motor e ar-condicionado, e
+            retire peso desnecessário do veículo. Essas práticas podem reduzir o consumo em até 20%.</p>
         </div>
       </div>
 
       <div class="blog-card">
         <div class="blog-image">
-          <img src="/api/placeholder/350/200" alt="Cuidados em Viagem">
+          <img src="images/dica-viagem.jpg" alt="Cuidados para Viagens Longas">
         </div>
         <div class="blog-content">
           <div class="blog-date"><i class="far fa-calendar-alt"></i> 02 Mar, 2025</div>
           <h3 class="blog-title">Checklist para Viagens Longas</h3>
-          <p class="blog-excerpt">Prepare seu veículo adequadamente para viagens longas e evite imprevistos durante o
-            percurso...</p>
-          <a href="#" class="blog-link">Ler mais <i class="fas fa-arrow-right"></i></a>
+          <p class="blog-excerpt">Antes de viajar, verifique os freios, pneus (incluindo o estepe), nível dos fluidos,
+            faróis e lanternas, limpadores de para-brisa, sistema de arrefecimento e ar-condicionado. Leve um kit básico
+            de ferramentas, triângulo, macaco e documentos do veículo. Uma verificação completa evita transtornos na
+            estrada.</p>
         </div>
       </div>
     </div>
 
-    <div class="blog-cta">
-      <a href="#" class="secondary-button">Ver Todos os Artigos</a>
-    </div>
   </section>
 
   <!-- Brands Section -->
@@ -380,12 +379,12 @@
     <p class="section-subtitle">Trabalhamos com todas as marcas nacionais e importadas</p>
 
     <div class="brands-slider">
-      <div class="brand-item"><img src="/api/placeholder/150/80" alt="Marca de Carro"></div>
-      <div class="brand-item"><img src="/api/placeholder/150/80" alt="Marca de Carro"></div>
-      <div class="brand-item"><img src="/api/placeholder/150/80" alt="Marca de Carro"></div>
-      <div class="brand-item"><img src="/api/placeholder/150/80" alt="Marca de Carro"></div>
-      <div class="brand-item"><img src="/api/placeholder/150/80" alt="Marca de Carro"></div>
-      <div class="brand-item"><img src="/api/placeholder/150/80" alt="Marca de Carro"></div>
+      <div class="brand-item"><img src="images/marca-volkswagen.jpg" alt="Volkswagen"></div>
+      <div class="brand-item"><img src="images/marca-fiat.jpg" alt="Fiat"></div>
+      <div class="brand-item"><img src="images/marca-chevrolet.jpg" alt="Chevrolet"></div>
+      <div class="brand-item"><img src="images/marca-hyundai.jpg" alt="Hyundai"></div>
+      <div class="brand-item"><img src="images/marca-toyota.jpg" alt="Toyota"></div>
+      <div class="brand-item"><img src="images/marca-honda.jpg" alt="Honda"></div>
     </div>
   </section>
 
@@ -436,7 +435,7 @@
 
       <div class="appointment-info">
         <div class="contact-map">
-          <img src="/api/placeholder/500/300" alt="Mapa de Localização">
+          <img src="images/mapa-localizacao.jpg" alt="Mapa de Localização da AutoTech Express">
         </div>
         <div class="contact-details">
           <h3>Informações de Contato</h3>
@@ -467,7 +466,7 @@
   <footer>
     <div class="footer-content">
       <div class="footer-about">
-        <a href="#inicio" class="footer-logo">Auto<span>Tech</span> Express</a>
+        <a href="#hero" class="footer-logo">Auto<span>Tech</span> Express</a>
         <p>Oferecemos serviços completos de mecânica automotiva com tecnologia de ponta e profissionais qualificados
           para garantir a melhor experiência aos nossos clientes.</p>
         <div class="social-icons">
@@ -480,13 +479,13 @@
       <div class="footer-links">
         <h3 class="footer-heading">Links Rápidos</h3>
         <ul>
-          <li><a href="#inicio"><i class="fas fa-chevron-right"></i> Início</a></li>
+          <li><a href="#hero"><i class="fas fa-chevron-right"></i> Início</a></li>
           <li><a href="#servicos"><i class="fas fa-chevron-right"></i> Serviços</a></li>
           <li><a href="#sobre-nos"><i class="fas fa-chevron-right"></i> Sobre Nós</a></li>
           <li><a href="#diferenciais"><i class="fas fa-chevron-right"></i> Diferenciais</a></li>
           <li><a href="#galeria"><i class="fas fa-chevron-right"></i> Galeria</a></li>
           <li><a href="#depoimentos"><i class="fas fa-chevron-right"></i> Depoimentos</a></li>
-          <li><a href="#blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
+          <li><a href="#blog"><i class="fas fa-chevron-right"></i> Dicas</a></li>
           <li><a href="#contato"><i class="fas fa-chevron-right"></i> Contato</a></li>
         </ul>
       </div>
@@ -511,21 +510,13 @@
           </li>
         </ul>
       </div>
-      <div class="footer-newsletter">
-        <h3 class="footer-heading">Newsletter</h3>
-        <p>Cadastre-se para receber nossas dicas de manutenção e ofertas exclusivas:</p>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Seu e-mail" required>
-          <button type="submit"><i class="fas fa-paper-plane"></i></button>
-        </form>
-      </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2025 AutoTech Express. Todos os direitos reservados. Desenvolvido por GBConnect.digital</p>
     </div>
   </footer>
 
-  <a href="#inicio" class="back-to-top">
+  <a href="#hero" class="back-to-top">
     <i class="fas fa-arrow-up"></i>
   </a>
 

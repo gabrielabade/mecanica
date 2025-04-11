@@ -68,6 +68,24 @@ img {
   height: auto;
 }
 
+.hide-on-mobile {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+}
+
 /* Header */
 header {
   background-color: var(--primary);
@@ -170,6 +188,21 @@ nav a.active::after {
   width: 100%;
 }
 
+.mobile-cta {
+  background-color: var(--secondary);
+  color: white !important;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+}
+
+.mobile-cta:hover {
+  background-color: #e69009;
+}
+
 .menu-btn {
   background-color: var(--secondary);
   color: white;
@@ -196,7 +229,7 @@ nav a.active::after {
 /* Hero Section */
 .hero {
   height: 600px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/api/placeholder/1600/900');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/hero-background.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -607,7 +640,7 @@ nav a.active::after {
   font-size: 14px;
 }
 
-/* Blog Section */
+/* Blog Section (Dicas) */
 .blog {
   padding: 80px 5%;
   text-align: center;
@@ -660,27 +693,6 @@ nav a.active::after {
 .blog-excerpt {
   color: var(--text);
   margin-bottom: 15px;
-}
-
-.blog-link {
-  color: var(--primary);
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  transition: color 0.3s;
-}
-
-.blog-link:hover {
-  color: var(--secondary);
-}
-
-.blog-link i {
-  margin-left: 5px;
-  font-size: 12px;
-}
-
-.blog-cta {
-  margin-top: 40px;
 }
 
 /* Brands Section */
@@ -980,37 +992,6 @@ footer {
   opacity: 0.8;
 }
 
-.footer-newsletter p {
-  margin-bottom: 15px;
-  opacity: 0.8;
-}
-
-.newsletter-form {
-  display: flex;
-}
-
-.newsletter-form input {
-  flex: 1;
-  padding: 12px;
-  border: none;
-  border-radius: 4px 0 0 4px;
-  font-family: inherit;
-}
-
-.newsletter-form button {
-  background-color: var(--secondary);
-  color: white;
-  border: none;
-  padding: 0 15px;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.newsletter-form button:hover {
-  background-color: #e69009;
-}
-
 .footer-bottom {
   border-top: 1px solid #374151;
   padding-top: 20px;
@@ -1129,6 +1110,11 @@ footer {
 
   nav li {
     margin-bottom: 16px;
+  }
+
+  nav li:last-child {
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
 
   .mobile-menu {
