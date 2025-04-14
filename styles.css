@@ -7,20 +7,20 @@
 
 /* Variáveis de cores */
 :root {
-  --primary: #1e3a8a;
-  /* Azul escuro para a identidade principal */
-  --secondary: #f59e0b;
-  /* Laranja para destaques e ações */
-  --dark: #1f2937;
-  /* Quase preto para textos importantes */
-  --light: #f3f4f6;
-  /* Cinza claro para fundos */
-  --accent: #ef4444;
-  /* Vermelho para alertas ou elementos importantes */
-  --text: #374151;
-  /* Cinza escuro para textos comuns */
-  --background: #ffffff;
-  /* Branco para o fundo */
+  --primary: #0d47a1;
+  /* Azul profundo para a identidade principal */
+  --secondary: #d32f2f;
+  /* Vermelho intenso para destaques e ações */
+  --dark: #212121;
+  /* Preto suave para textos importantes */
+  --light: #e3f2fd;
+  /* Azul claro para fundos */
+  --accent: #b71c1c;
+  /* Vermelho escuro para alertas ou elementos importantes */
+  --text: #263238;
+  /* Azul acinzentado para textos comuns */
+  --background: #f5f5f5;
+  /* Cinza muito claro para o fundo */
 }
 
 body {
@@ -229,7 +229,7 @@ nav a.active::after {
 /* Hero Section */
 .hero {
   height: 600px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/hero-background.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.897), rgba(7, 0, 37, 0.493)), url('images/sobre-nos-equipe.webp');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -293,7 +293,10 @@ nav a.active::after {
 /* Services Section */
 .services {
   padding: 80px 5%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--light);
 }
 
@@ -308,14 +311,14 @@ nav a.active::after {
   color: #6b7280;
   margin-bottom: 48px;
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 32px;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .service-card {
@@ -452,6 +455,13 @@ nav a.active::after {
   background-color: var(--light);
 }
 
+.why-choose .section-subtitle {
+  font-size: 18px;
+  margin-bottom: 48px;
+  max-width: 100vw;
+  text-align: center;
+}
+
 .stats-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -516,11 +526,20 @@ nav a.active::after {
   text-align: center;
 }
 
+.gallery .section-subtitle {
+  font-size: 18px;
+  margin-bottom: 48px;
+  max-width: 100vw;
+  text-align: center;
+}
+
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 20px;
   margin-top: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery-item {
@@ -567,6 +586,13 @@ nav a.active::after {
   padding: 80px 5%;
   text-align: center;
   background-color: var(--light);
+}
+
+.testimonials .section-subtitle {
+  font-size: 18px;
+  margin-bottom: 48px;
+  max-width: 100vw;
+  text-align: center;
 }
 
 .testimonial-container {
@@ -648,7 +674,7 @@ nav a.active::after {
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 30px;
   margin-top: 40px;
 }
@@ -690,6 +716,13 @@ nav a.active::after {
   color: var(--dark);
 }
 
+.blog .section-subtitle {
+  font-size: 18px;
+  margin-bottom: 48px;
+  max-width: 100vw;
+  text-align: center;
+}
+
 .blog-excerpt {
   color: var(--text);
   margin-bottom: 15px;
@@ -700,6 +733,13 @@ nav a.active::after {
   padding: 50px 5%;
   text-align: center;
   background-color: white;
+}
+
+.brands .section-subtitle {
+  font-size: 18px;
+  margin-bottom: 48px;
+  max-width: 100vw;
+  text-align: center;
 }
 
 .brands-slider {
@@ -812,7 +852,7 @@ nav a.active::after {
 
 .contact-map img {
   width: 100%;
-  height: 300px;
+  height: 450px;
   object-fit: cover;
 }
 
@@ -1000,6 +1040,13 @@ footer {
   opacity: 0.7;
 }
 
+.footer-bottom a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: larger;
+}
+
 /* Back to top button */
 .back-to-top {
   position: fixed;
@@ -1178,6 +1225,11 @@ footer {
 
   .contact-buttons {
     flex-direction: column;
+  }
+
+  .contact-map img {
+    width: 100%;
+    height: 200px;
   }
 
   .gallery-item {

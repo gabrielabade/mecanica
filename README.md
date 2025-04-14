@@ -9,7 +9,12 @@ Este checklist organiza as imagens necessárias para o site. Cada item inclui no
 - [ ] **`hero-background.jpg`**  
   **Dimensões:** 1920 x 1080 pixels  
   **Descrição:** Imagem panorâmica de uma oficina moderna e bem iluminada, mostrando carros em manutenção e mecânicos trabalhando. A imagem deve transmitir profissionalismo, organização e tecnologia. Ideal mostrar veículos sendo atendidos e técnicos uniformizados utilizando equipamentos de diagnóstico modernos.
-
+ #1e3a8a;
+ #f59e0b;
+ #1f2937;
+ #f3f4f6;
+  #ef4444;
+ #374151;
 ---
 
 ## 👥 Seção "Sobre Nós"
